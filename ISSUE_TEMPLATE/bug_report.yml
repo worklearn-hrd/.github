@@ -1,0 +1,51 @@
+name: 버그 리포트
+description: 기대와 다르게 동작하는 것을 신고합니다
+title: "fix: "
+labels: ["type:bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 설명
+      description: 무엇이 잘못됐는지 한두 문장으로
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 절차
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 동작
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 실제 동작
+      description: 로그·스택트레이스·스크린샷이 있으면 함께
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 환경
+      placeholder: "예: 로컬 docker compose / ECS staging, 커밋 abc1234"
+  - type: input
+    id: epic
+    attributes:
+      label: 상위 에픽
+      description: 특정 기능의 버그면 에픽을 전체 경로로
+      placeholder: "worklearn-hrd/worklearn-docs#12"
+  - type: textarea
+    id: notes
+    attributes:
+      label: 추가 메모
+      description: 의심되는 원인, 관련 이슈·ADR

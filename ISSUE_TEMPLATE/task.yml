@@ -1,0 +1,40 @@
+name: 작업
+description: 에픽의 하위 구현 작업, 또는 설정·리팩터링·조사 같은 할 일. 반나절~이틀 크기
+labels: ["type:task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        제목은 커밋 제목처럼 씁니다(`feat(xapi): statement 수신 API`). 만든 뒤 **마일스톤(단계)**을 설정하고, 에픽이 있으면 에픽 쪽에서 sub-issue로 연결하세요.
+  - type: textarea
+    id: goal
+    attributes:
+      label: 목적
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: 할 일
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+    validations:
+      required: true
+  - type: input
+    id: epic
+    attributes:
+      label: 상위 에픽
+      description: 전체 경로로. 에픽 없는 작업이면 비운다
+      placeholder: "worklearn-hrd/worklearn-docs#12"
+  - type: input
+    id: refs
+    attributes:
+      label: 관련 문서·이슈
+      placeholder: "기획서 §7, ADR-002, #12"

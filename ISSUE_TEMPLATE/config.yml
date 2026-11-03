@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 에픽은 worklearn-docs에
+    url: https://github.com/worklearn-hrd/worklearn-docs/issues/new/choose
+    about: 기능 단위(기획서 §2 기능, 브리프 화면)의 에픽은 docs 레포에 만들고, 이 레포에는 그 하위 작업을 만듭니다.
+  - name: 기획서·설계 문서
+    url: https://github.com/worklearn-hrd/worklearn-docs
+    about: 기능 범위와 설계는 먼저 기획서에서 확인하세요.
