@@ -1,4 +1,4 @@
-name: 작업
+name: 작업 (Task)
 description: 에픽의 하위 구현 작업, 또는 설정·리팩터링·조사 같은 할 일. 반나절~이틀 크기
 labels: ["type:task"]
 body:
