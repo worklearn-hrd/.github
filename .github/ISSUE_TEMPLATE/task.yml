@@ -37,4 +37,4 @@ body:
     id: refs
     attributes:
       label: 관련 문서·이슈
-      placeholder: "기획서 §7, ADR-002, #12"
+      placeholder: "기획서 §7, ADR-001, #12"
